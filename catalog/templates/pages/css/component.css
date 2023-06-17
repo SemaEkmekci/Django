@@ -1,0 +1,126 @@
+/* Header */
+.large-header {
+  /* background: rgba(0, 0, 0, 0.5); */
+  height: 100%;
+  width: 100%;
+  z-index: 70;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#iletisim {
+  margin-top: 10px;
+  color: #fff;
+}
+#trans {
+  background: transparent !important;
+}
+.bx-chevron-left:before,
+.bx-chevron-right:before {
+  color: #fff;
+  font-size: 50px;
+}
+.center {
+  position: absolute;
+  text-align: center;
+  font-size: 18px;
+}
+body {
+  overflow: -moz-scrollbars-vertical;
+  overflow-x: hidden;
+  overflow: -moz-scrollbars-vertical;
+  background-color: #000;
+}
+.main .large-header {
+  background-image: url("../img/arka_plan.jpg");
+
+  padding: 20%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.navbar-brand {
+  margin-right: 0px !important;
+}
+.navbar-dark .navbar-nav .nav-link {
+  font-weight: 600 !important;
+  font-size: large;
+  color: rgba(255, 255, 255, 0.642) !important;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: rgb(255, 255, 255) !important;
+}
+.btn {
+  margin-top: 30px;
+  position: relative;
+  display: inline-block;
+  width: 277px;
+  height: 50px;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: transparent;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 17px;
+  letter-spacing: 0.045em;
+}
+
+.btn svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.btn svg rect {
+  stroke: #ffff;
+  stroke-width: 4;
+  stroke-dasharray: 353, 0;
+  stroke-dashoffset: 0;
+  -webkit-transition: all 600ms ease;
+  transition: all 600ms ease;
+}
+
+.btn span {
+  background: #a7cfdf; /* Old browsers */
+  background: -moz-linear-gradient(
+    left,
+    #a7cfdf 0%,
+    #1fa3ef 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    left,
+    #a7cfdf 0%,
+    #1fa3ef 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to right,
+    #a7cfdf 0%,
+    #1fa3ef 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7cfdf', endColorstr='#1fa3ef',GradientType=1 ); /* IE6-9 */
+
+  /* -webkit-background-clip: text; */
+  -webkit-text-fill-color: transparent;
+}
+
+.btn:hover svg rect {
+  stroke-width: 4;
+  stroke-dasharray: 196, 543;
+  stroke-dashoffset: 437;
+}
+
+@media only screen and (max-width: 768px) {
+  .main .main-title {
+    font-size: 1.3em;
+  }
+}
